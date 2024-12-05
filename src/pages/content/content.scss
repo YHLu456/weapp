@@ -1,0 +1,196 @@
+page {
+  background-color: #f4f6f8;
+  height: 100%;
+}
+
+.contentLayout {
+  height: 100%;
+  padding: 20px;
+
+  .contentTopBox {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0px #e5e5e5;
+
+    .top {
+      font-size: 40px;
+      line-height: 1em;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 20px 0;
+    }
+
+    .content {
+      margin-top: 10px;
+      font-size: 28px;
+      color: #666;
+      line-height: 1.4em;
+    }
+  }
+
+  .contentBox {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0px #e5e5e5;
+
+    .title {
+      font-size: 40px;
+      line-height: 1em;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 20px 0;
+    }
+
+    .info {
+      padding: 20px 0;
+
+      .dateAndCount {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        color: #ccc;
+        font-size: 28px;
+        margin-bottom: 20px;
+
+        .right {
+          margin-left: auto;
+        }
+
+        .txt {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        .txt {
+          margin-right: 26px;
+          font-size: 28px;
+          color: #666;
+        }
+
+        .tag {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          .tag-item {
+            padding: 0 16px;
+            height: 48px;
+            color: #007bff;
+            background: #e5f2ff;
+            margin-right: 8px;
+            border-radius: 4px;
+            line-height: 48px;
+            font-size: 26px;
+            text-align: center;
+          }
+        }
+      }
+
+      .infoContentBox {
+        .txt {
+          font-size: 28px;
+          color: #666;
+        }
+
+        .infoContent {
+          margin-top: 20px;
+          font-size: 28px;
+          color: #666;
+          line-height: 1.4em;
+        }
+      }
+    }
+  }
+
+  .btn {
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    margin: 30px 20px;
+    color: #fff;
+    border-radius: 80px;
+    font-size: 30px;
+    background-color: #007bff;
+  }
+}
+
+/* 吸底工具栏 */
+.toolbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  background-color: #fff;
+  height: 100px;
+  padding: 0 20px;
+  // 通过读取环境变量获取底部安全区域 详情看 https://github.com/NervJS/taro/issues/9323
+  bottom: env(safe-area-inset-bottom, 0.5vh);
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: content-box;
+
+  .price {
+    font-size: 24px;
+    color: #666;
+  }
+
+  .button {
+    width: 220px;
+    text-align: center;
+    line-height: 72px;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 72px;
+    background-color: #1296db;
+  }
+}
+
+.actionBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  bottom: env(safe-area-inset-bottom);
+  background-color: #fff;
+  height: 100px;
+  padding: 0 20px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: content-box;
+
+  .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    .action-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 28px;
+      color: #666;
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 1px solid #eaeaea;
+      box-shadow: 0 0 10px 0px #e5e5e5;
+      text-align: center;
+    }
+  }
+}

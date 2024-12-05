@@ -1,0 +1,33 @@
+.category {
+  margin: 20rpx 0 0;
+  padding: 10rpx 0;
+  flex-wrap: wrap;
+  min-height: 280rpx;
+  display: grid;
+  /* 网格布局，两行两列 */
+  grid-template-rows: auto auto;
+  /* 定义两行 */
+  grid-template-columns: auto auto;
+  /* 定义两列 */
+  gap: 10rpx;
+
+  .category-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background: #fff;
+
+    .icon {
+      width: 80rpx;
+      height: 80rpx;
+    }
+
+    .text {
+      font-size: 26rpx;
+      color: #666;
+    }
+  }
+}

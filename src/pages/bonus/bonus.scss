@@ -1,0 +1,83 @@
+page {
+  height: 100%;
+  background: #f5f5f5;
+}
+.scorePage {
+  padding: 20rpx;
+  .myScore {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #eb362e, #fc6946);
+    padding: 40rpx;
+    border-radius: 20rpx;
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
+    color: #fff;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .bonus {
+        font-size: 48rpx;
+        color: #fff;
+        font-weight: 500;
+        .txt {
+          margin-left: 20rpx;
+          color: #f1f1f1;
+          font-size: 34rpx;
+        }
+      }
+      .btn {
+        border: 1px solid #fff;
+        border-radius: 20rpx;
+        padding: 6rpx 10rpx;
+        font-size: 24rpx;
+        color: #fff;
+      }
+    }
+    .tips {
+      margin-top: 20rpx;
+      font-size: 24rpx;
+      color: #ffffff;
+    }
+  }
+
+  .infoCard {
+    margin-top: 40rpx;
+    border-top-left-radius: 20rpx;
+    border-top-right-radius: 20rpx;
+    background: #fff;
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 26rpx 10rpx;
+      border-bottom: 1px solid #eee;
+      .select {
+        flex: 1;
+        text-align: center;
+        font-size: 28rpx;
+        font-weight: 700;
+        padding-bottom: 6rpx;
+      }
+      .active {
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -20rpx;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 8rpx;
+          width: 100rpx;
+          background: red;
+          border-radius: 20rpx;
+        }
+      }
+    }
+  }
+}
+.loading-text {
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+  padding: 20rpx 0;
+}

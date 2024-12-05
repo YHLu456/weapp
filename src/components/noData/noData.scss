@@ -1,0 +1,28 @@
+.noData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80rpx 0;
+
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    image {
+      width: 520rpx;
+      height: 260rpx;
+      display: block;
+    }
+  }
+
+  .text {
+    font-size: 28rpx;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rpx;
+  }
+}

@@ -1,0 +1,40 @@
+.list {
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10rpx;
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    .info {
+      margin-left: 20rpx;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-size: 28rpx;
+        font-weight: bold;
+        color: #000;
+        max-width: 320rpx;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .tips {
+        font-size: 24rpx;
+        margin-top: 6rpx;
+        color: #ccc;
+      }
+    }
+  }
+
+  .right {
+    text-align: right;
+    color: red;
+  }
+}

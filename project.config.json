@@ -1,0 +1,29 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "sh",
+  "description": "xx",
+  "appid": "wx7df1c0a5e826be11",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "enhance": false,
+    "compileHotReLoad": false,
+    "postcss": false,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "swc": true,
+    "ignoreUploadUnusedFiles": true,
+    "newFeature": true,
+    "autoAudits": false,
+    "coverView": true,
+    "showShadowRootInWxmlPanel": false,
+    "scopeDataCheck": false,
+    "useCompilerModule": false
+  },
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {}
+}

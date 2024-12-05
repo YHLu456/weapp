@@ -1,0 +1,16 @@
+page {
+  background-color: #f7f7f7;
+  height: 100%;
+}
+
+.index {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.scrollView {
+  flex: 1;
+  overflow: scroll;
+}

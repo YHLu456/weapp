@@ -1,0 +1,119 @@
+.scroll {
+  width: 690rpx;
+  background: #fff;
+  margin: 15rpx auto;
+  padding: 0 15rpx;
+  border-radius: 20rpx;
+
+  .scroll-item {
+    padding: 20rpx 10rpx;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1rpx solid #ccc;
+
+    .top {
+      display: flex;
+      align-items: center;
+
+      .img {
+        height: 50rpx;
+        width: 50rpx;
+
+        image {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      .username {
+        margin-left: 20rpx;
+        color: #0e151c;
+        font-weight: 500;
+        max-width: 400rpx;
+        font-size: 28rpx;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      margin-top: 8rpx;
+
+      .isTop {
+        border-radius: 18rpx;
+        padding: 2rpx 8rpx;
+        font-size: 24rpx;
+        background: #ffebe9;
+        color: #fe3e29;
+      }
+
+      .content-title {
+        margin-left: 10rpx;
+        color: #000;
+        font-size: 28rpx;
+        font-weight: 500;
+        max-width: 500rpx;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .content {
+      margin-top: 20rpx;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      color: #666;
+      font-size: 24rpx;
+    }
+
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #ccc;
+      margin-top: 20rpx;
+      font-size: 24rpx;
+
+      .tags {
+        display: flex;
+        align-items: center;
+        gap: 10rpx;
+        flex: 1;
+        overflow: hidden;
+
+        .tag {
+          flex-shrink: 0;
+          padding: 5rpx 10rpx;
+          border-radius: 10rpx;
+          background: #1296db;
+          color: #fff;
+          font-size: 24rpx;
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 20rpx;
+
+        .row {
+          display: flex;
+          align-items: center;
+          color: #666;
+        }
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
